@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2009 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package gc
 
-import "github.com/dave/golib/src/cmd/compile/internal/types"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+)
 
 // select
 func (pstate *PackageState) typecheckselect(sel *Node) {

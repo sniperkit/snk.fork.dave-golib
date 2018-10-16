@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // run
 
 // This test makes sure that t.s = t.s[0:x] doesn't write
@@ -6,7 +11,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const N = 1000000
 

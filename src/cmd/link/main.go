@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,19 +11,20 @@ package main
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/amd64"
-	"github.com/dave/golib/src/cmd/link/internal/arm"
-	"github.com/dave/golib/src/cmd/link/internal/arm64"
-	"github.com/dave/golib/src/cmd/link/internal/ld"
-	"github.com/dave/golib/src/cmd/link/internal/mips"
-	"github.com/dave/golib/src/cmd/link/internal/mips64"
-	"github.com/dave/golib/src/cmd/link/internal/ppc64"
-	"github.com/dave/golib/src/cmd/link/internal/s390x"
-	"github.com/dave/golib/src/cmd/link/internal/wasm"
-	"github.com/dave/golib/src/cmd/link/internal/x86"
 	"os"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/amd64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/arm"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/arm64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ld"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/mips"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/mips64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ppc64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/s390x"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/wasm"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/x86"
 )
 
 // The bulk of the linker implementation lives in cmd/link/internal/ld.

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package types
 
 type PackageState struct {
@@ -7,15 +12,15 @@ type PackageState struct {
 	Block     int32
 	Bytetype  *Type
 	Ctxt      *obj.Link
-	Dowidth   func( *Type)
+	Dowidth   func(*Type)
 	Errortype *Type
 	FErr      int
-	Fatalf    func( string,  []interface {
+	Fatalf    func(string, []interface {
 	})
 	FmtLeft            int
 	FmtUnsigned        int
-	FormatSym          func( *Sym,  fmt.State,  rune,  int)
-	FormatType         func( *Type,  fmt.State,  rune,  int)
+	FormatSym          func(*Sym, fmt.State, rune, int)
+	FormatType         func(*Type, fmt.State, rune, int)
 	Idealbool          *Type
 	Idealcomplex       *Type
 	Idealfloat         *Type
@@ -24,17 +29,17 @@ type PackageState struct {
 	Idealstring        *Type
 	InitSyms           []*Sym
 	NewPtrCacheEnabled bool
-	ParamsResults      [2]func( *Type) ( *Type)
-	RecvsParams        [2]func( *Type) ( *Type)
-	RecvsParamsResults [3]func( *Type) ( *Type)
+	ParamsResults      [2]func(*Type) *Type
+	RecvsParams        [2]func(*Type) *Type
+	RecvsParamsResults [3]func(*Type) *Type
 	Runetype           *Type
-	Sconv              func( *Sym,  int,  int) ( string)
-	Tconv              func( *Type,  int,  int,  int) ( string)
+	Sconv              func(*Sym, int, int) string
+	Tconv              func(*Type, int, int, int) string
 	Tptr               EType
 	TypeFlags          *Type
 	TypeInt128         *Type
 	TypeInvalid        *Type
-	TypeLinkSym        func( *Type) ( *obj.LSym)
+	TypeLinkSym        func(*Type) *obj.LSym
 	TypeMem            *Type
 	TypeVoid           *Type
 	Types              [38]*Type

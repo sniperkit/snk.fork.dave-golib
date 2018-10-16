@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2009 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -5,10 +10,10 @@
 package arm
 
 import (
-	"github.com/dave/golib/src/cmd/compile/internal/gc"
-	"github.com/dave/golib/src/cmd/compile/internal/ssa"
-	"github.com/dave/golib/src/cmd/internal/obj/arm"
-	"github.com/dave/golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/gc"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/ssa"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/arm"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 func (pstate *PackageState) Init(arch *gc.Arch) {

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/obj.c and utils/6l/span.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/obj.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/span.c
@@ -32,9 +37,10 @@
 package obj
 
 import (
-	"github.com/dave/golib/src/cmd/internal/objabi"
 	"log"
 	"math"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 // Grow increases the length of s.P to lsiz.

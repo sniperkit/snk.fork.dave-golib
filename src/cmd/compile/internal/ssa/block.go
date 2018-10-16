@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,7 +11,8 @@ package ssa
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/src"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // Block represents a basic block in the control flow graph of a function.

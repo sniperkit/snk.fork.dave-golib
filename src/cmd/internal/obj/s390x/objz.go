@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Based on cmd/internal/obj/ppc64/obj9.go.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -30,10 +35,11 @@
 package s390x
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
 	"math"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 func progedit(ctxt *obj.Link, p *obj.Prog, newprog obj.ProgAlloc) {

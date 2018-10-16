@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/6l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/asm.c
 //
@@ -32,11 +37,12 @@ package amd64
 
 import (
 	"debug/elf"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/ld"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ld"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 func PADDR(x uint32) uint32 {

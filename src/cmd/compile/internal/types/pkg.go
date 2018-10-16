@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,10 +11,11 @@ package types
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
 	"sort"
 	"sync"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 // MaxPkgHeight is a height greater than any likely package height.

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -18,13 +23,14 @@ import (
 	"crypto/md5"
 	"crypto/sha1"
 	"fmt"
-	"github.com/dave/golib/src/cmd/compile/internal/ssa"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/src"
 	"os"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/ssa"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // OpVarDef is an annotation for the liveness analysis, marking a place

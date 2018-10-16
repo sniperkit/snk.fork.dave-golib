@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2011 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,18 +11,19 @@ package gc
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/compile/internal/ssa"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
-	"github.com/dave/golib/src/cmd/internal/dwarf"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/src"
-	"github.com/dave/golib/src/cmd/internal/sys"
 	"math/rand"
 	"sort"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/ssa"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/dwarf"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 func (pstate *PackageState) emitptrargsmap(fn *Node) {

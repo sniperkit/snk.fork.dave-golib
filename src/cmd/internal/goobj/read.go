@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -13,11 +18,12 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/objabi"
 	"io"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 // A Sym is a named symbol in an object file.

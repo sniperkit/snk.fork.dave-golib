@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2018 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package syntax
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // PosMax is the largest line or column value that can be represented without loss.
 // Incoming values (arguments) larger than PosMax will be set to PosMax.
@@ -26,10 +33,10 @@ func MakePos(base *PosBase, line, col uint) Pos { return Pos{base, sat32(line), 
 // TODO(gri) IsKnown makes an assumption about linebase < 1.
 //           Maybe we should check for Base() != nil instead.
 
-func (pos Pos) IsKnown() bool { return pos.line > 0 }
+func (pos Pos) IsKnown() bool  { return pos.line > 0 }
 func (pos Pos) Base() *PosBase { return pos.base }
-func (pos Pos) Line() uint { return uint(pos.line) }
-func (pos Pos) Col() uint { return uint(pos.col) }
+func (pos Pos) Line() uint     { return uint(pos.line) }
+func (pos Pos) Col() uint      { return uint(pos.col) }
 
 func (pos Pos) RelFilename() string { return pos.base.Filename() }
 

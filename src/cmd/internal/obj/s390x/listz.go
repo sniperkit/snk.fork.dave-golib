@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Based on cmd/internal/obj/ppc64/list9.go.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -31,7 +36,8 @@ package s390x
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 func (pstate *PackageState) init() {

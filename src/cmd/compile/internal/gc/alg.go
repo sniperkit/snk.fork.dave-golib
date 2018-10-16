@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,7 +11,8 @@ package gc
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
 )
 
 // AlgKind describes the kind of algorithms used for comparing and

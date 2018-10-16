@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,11 +11,12 @@ package ssa
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/dwarf"
-	"github.com/dave/golib/src/cmd/internal/obj"
 	"math/bits"
 	"sort"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/dwarf"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 type SlotID int32

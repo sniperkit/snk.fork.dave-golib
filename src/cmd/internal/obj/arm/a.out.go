@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/5c/5.out.h
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5c/5.out.h
 //
@@ -30,7 +35,9 @@
 
 package arm
 
-import "github.com/dave/golib/src/cmd/internal/obj"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+)
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p arm
 

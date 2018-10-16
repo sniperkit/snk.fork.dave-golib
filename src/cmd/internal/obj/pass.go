@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/6l/pass.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/pass.c
 //

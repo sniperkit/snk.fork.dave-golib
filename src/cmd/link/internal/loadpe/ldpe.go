@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2010 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -10,13 +15,14 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/bio"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"io"
 	"sort"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/bio"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 const (

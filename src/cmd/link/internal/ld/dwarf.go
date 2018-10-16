@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2010 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -15,13 +20,14 @@ package ld
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/dwarf"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/dwarf"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 type dwctxt struct {
@@ -1125,7 +1131,7 @@ func (pstate *PackageState) writelines(ctxt *Link, lib *sym.Library, textp []*sy
 	// compiler, this should happen naturally.
 	newattr(dwinfo, dwarf.DW_AT_comp_dir, dwarf.DW_CLS_STRING, int64(len(compDir)), compDir)
 	producerExtra := ctxt.Syms.Lookup(dwarf.CUInfoPrefix+"producer."+lib.Pkg, 0)
-	producer := "Go github.com/dave/golib/src/cmd/compile " + pstate.objabi.Version
+	producer := "Go github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile " + pstate.objabi.Version
 	if len(producerExtra.P) > 0 {
 		// We put a semicolon before the flags to clearly
 		// separate them from the version, which can be long

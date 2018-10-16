@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/5l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5l/asm.c
 //
@@ -34,11 +39,12 @@ import (
 	"debug/elf"
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/ld"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ld"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 func (pstate *PackageState) genplt(ctxt *ld.Link) {

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -8,7 +13,6 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/dave/golib/src/internal/testenv"
 	"io"
 	"io/ioutil"
 	"os"
@@ -20,6 +24,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/internal/testenv"
 )
 
 var update = flag.Bool("u", false, "update test reference files")

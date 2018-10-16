@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/5c/swt.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5c/swt.c
 //
@@ -31,9 +36,9 @@
 package arm
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 func (pstate *PackageState) progedit(ctxt *obj.Link, p *obj.Prog, newprog obj.ProgAlloc) {

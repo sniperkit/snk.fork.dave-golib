@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/6c/6.out.h
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6c/6.out.h
 //
@@ -30,7 +35,9 @@
 
 package x86
 
-import "github.com/dave/golib/src/cmd/internal/obj"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+)
 
 const (
 	REG_NONE = 0

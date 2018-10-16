@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/l.h and related files.
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/l.h
 //
@@ -33,11 +38,12 @@ package obj
 import (
 	"bufio"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/dwarf"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/src"
-	"github.com/dave/golib/src/cmd/internal/sys"
 	"sync"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/dwarf"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 // An Addr is an argument to an instruction.

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package ssa_test
 
 import (
@@ -6,10 +11,11 @@ import (
 	"debug/macho"
 	"debug/pe"
 	"fmt"
-	"github.com/dave/golib/src/internal/testenv"
 	"io"
 	"runtime"
 	"testing"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/internal/testenv"
 )
 
 func open(path string) (*dwarf.Data, error) {

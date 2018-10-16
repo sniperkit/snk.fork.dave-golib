@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Based on cmd/internal/obj/ppc64/asm9.go.
 //
 //    Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -30,11 +35,12 @@
 package s390x
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
 	"log"
 	"math"
 	"sort"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 // ctxtz holds state while assembling a single function.

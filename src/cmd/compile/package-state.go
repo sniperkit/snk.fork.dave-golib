@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 type PackageState struct {
@@ -12,7 +17,7 @@ type PackageState struct {
 	s390x     *s390x.PackageState
 	wasm      *wasm.PackageState
 	x86       *x86.PackageState
-	archInits map[string]func( *gc.Arch)
+	archInits map[string]func(*gc.Arch)
 }
 
 func NewPackageState(amd64_pstate *amd64.PackageState, arm_pstate *arm.PackageState, arm64_pstate *arm64.PackageState, gc_pstate *gc.PackageState, mips_pstate *mips.PackageState, mips64_pstate *mips64.PackageState, ppc64_pstate *ppc64.PackageState, s390x_pstate *s390x.PackageState, wasm_pstate *wasm.PackageState, x86_pstate *x86.PackageState, objabi_pstate *objabi.PackageState) *PackageState {

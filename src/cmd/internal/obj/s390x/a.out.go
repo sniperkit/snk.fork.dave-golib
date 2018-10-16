@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Based on cmd/internal/obj/ppc64/a.out.go.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -29,7 +34,9 @@
 
 package s390x
 
-import "github.com/dave/golib/src/cmd/internal/obj"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+)
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p s390x
 

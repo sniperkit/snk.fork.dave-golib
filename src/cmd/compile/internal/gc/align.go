@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2009 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -5,8 +10,9 @@
 package gc
 
 import (
-	"github.com/dave/golib/src/cmd/compile/internal/types"
 	"sort"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
 )
 
 func (pstate *PackageState) Rnd(o int64, r int64) int64 {

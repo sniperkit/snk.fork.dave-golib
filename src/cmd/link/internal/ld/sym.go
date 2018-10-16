@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/obj.c and utils/6l/span.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/obj.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/span.c
@@ -32,10 +37,11 @@
 package ld
 
 import (
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 func (pstate *PackageState) linknew(arch *sys.Arch) *Link {

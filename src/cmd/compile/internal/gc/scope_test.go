@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,8 +11,6 @@ package gc_test
 
 import (
 	"debug/dwarf"
-	"github.com/dave/golib/src/cmd/internal/objfile"
-	"github.com/dave/golib/src/internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -17,6 +20,9 @@ import (
 	"strconv"
 	"strings"
 	"testing"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objfile"
+	"github.com/sniperkit/snk.fork.dave-golib/src/internal/testenv"
 )
 
 type testline struct {

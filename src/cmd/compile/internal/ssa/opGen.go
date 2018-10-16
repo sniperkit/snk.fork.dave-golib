@@ -1,16 +1,21 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Code generated from gen/*Ops.go; DO NOT EDIT.
 
 package ssa
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/obj/arm"
-	"github.com/dave/golib/src/cmd/internal/obj/arm64"
-	"github.com/dave/golib/src/cmd/internal/obj/mips"
-	"github.com/dave/golib/src/cmd/internal/obj/ppc64"
-	"github.com/dave/golib/src/cmd/internal/obj/s390x"
-	"github.com/dave/golib/src/cmd/internal/obj/wasm"
-	"github.com/dave/golib/src/cmd/internal/obj/x86"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/arm"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/arm64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/mips"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/ppc64"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/s390x"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/wasm"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/x86"
 )
 
 const (

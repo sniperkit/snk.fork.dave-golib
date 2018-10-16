@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package ssa
 
-import "math/big"
+import (
+	"math/big"
+)
 
 // So you want to compute x / c for some constant c?
 // Machine division instructions are slow, so we try to

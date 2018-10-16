@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -92,23 +97,18 @@ each encoding routine there is a matching and symmetric decoding routine.
 This symmetry makes it very easy to change or extend the format: If a new
 field needs to be encoded, a symmetric change can be made to exporter and
 importer.
-
 3) Making changes to the encoding format:
-
 Any change to the encoding format requires a respective change in the
 exporter below and a corresponding symmetric change to the importer in
 bimport.go.
-
 Furthermore, it requires a corresponding change to go/internal/gcimporter
 and golang.org/x/tools/go/gcimporter15. Changes to the latter must preserve
 compatibility with both the last release of the compiler, and with the
 corresponding compiler at tip. That change is necessarily more involved,
 as it must switch based on the version number in the export data file.
-
 It is recommended to turn on debugFormat temporarily when working on format
 changes as it will help finding encoding/decoding inconsistencies quickly.
 */
-
 package gc
 
 import (
@@ -116,11 +116,12 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
-	"github.com/dave/golib/src/cmd/internal/src"
 	"math/big"
 	"sort"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // If debugFormat is set, each integer and string value is preceded by a marker

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/5l/span.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5l/span.c
 //
@@ -32,11 +37,12 @@ package arm
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
 	"log"
 	"math"
 	"sort"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
 )
 
 // ctxt5 holds state while assembling a single function.

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -161,9 +166,9 @@ func genRules(arch arch) {
 	fmt.Fprintln(w)
 	fmt.Fprintln(w, "package ssa")
 	fmt.Fprintln(w, "import \"math\"")
-	fmt.Fprintln(w, "import \"github.com/dave/golib/src/cmd/internal/obj\"")
-	fmt.Fprintln(w, "import \"github.com/dave/golib/src/cmd/internal/objabi\"")
-	fmt.Fprintln(w, "import \"github.com/dave/golib/src/cmd/compile/internal/types\"")
+	fmt.Fprintln(w, "import \"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj\"")
+	fmt.Fprintln(w, "import \"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi\"")
+	fmt.Fprintln(w, "import \"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types\"")
 	fmt.Fprintln(w, "var _ = math.MinInt8  // in case not otherwise used")
 	fmt.Fprintln(w, "var _ = obj.ANOP      // in case not otherwise used")
 	fmt.Fprintln(w, "var _ = objabi.GOROOT // in case not otherwise used")

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gc
 
 type PackageState struct {
@@ -173,7 +178,7 @@ type PackageState struct {
 	itablinkpkg        *types.Pkg
 	itabpkg            *types.Pkg
 	itabs              []itabEntry
-	keepAlive          func( interface {
+	keepAlive          func(interface {
 	})
 	kinds              []int
 	largeStackFrames   []src.XPos
@@ -275,7 +280,7 @@ type PackageState struct {
 	tags              [128]string
 	thearch           Arch
 	timings           Timings
-	traceHandler      func( string)
+	traceHandler      func(string)
 	traceprofile      string
 	trackScopes       bool
 	trackpkg          *types.Pkg

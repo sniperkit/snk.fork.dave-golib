@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // cmd/7l/list.c and cmd/7l/sub.c from Vita Nuova.
 // https://code.google.com/p/ken-cc/source/browse/
 //
@@ -32,7 +37,8 @@ package arm64
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 func (pstate *PackageState) init() {

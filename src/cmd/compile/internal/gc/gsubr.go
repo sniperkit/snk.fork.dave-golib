@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6c/txt.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6c/txt.c
 //
@@ -31,11 +36,11 @@
 package gc
 
 import (
-	"github.com/dave/golib/src/cmd/compile/internal/ssa"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/src"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/ssa"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // Progs accumulates Progs for a function and converts them into machine code.

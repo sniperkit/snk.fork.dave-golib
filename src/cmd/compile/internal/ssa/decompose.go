@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -5,7 +10,7 @@
 package ssa
 
 import (
-	"github.com/dave/golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
 )
 
 // decompose converts phi ops on compound builtin types into phi

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/obj.c and utils/6l/span.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/obj.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/span.c
@@ -36,16 +41,17 @@ import (
 	"compress/zlib"
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/gcprog"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
 	"os"
 	"sort"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/gcprog"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 // isRuntimeDepPkg returns whether pkg is the runtime package or its dependency

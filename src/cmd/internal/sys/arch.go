@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package sys
 
-import "encoding/binary"
+import (
+	"encoding/binary"
+)
 
 // ArchFamily represents a family of one or more related architectures.
 // For example, amd64 and amd64p32 are both members of the AMD64 family,

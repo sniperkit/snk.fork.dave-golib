@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -12,11 +17,12 @@ import (
 	"bufio"
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/compile/internal/types"
-	"github.com/dave/golib/src/cmd/internal/src"
 	"math/big"
 	"strconv"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // The overall structure of Import is symmetric to Export: For each

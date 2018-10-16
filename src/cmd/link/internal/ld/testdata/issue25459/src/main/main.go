@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
-import "a"
+import (
+	"a"
+)
 
 var Glob int
 

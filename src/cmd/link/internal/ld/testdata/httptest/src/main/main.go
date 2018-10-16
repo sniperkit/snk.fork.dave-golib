@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // A small test program that uses the net/http package. There is
 // nothing special about net/http here, this is just a convenient way
 // to pull in a lot of code.

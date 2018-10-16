@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/8l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/8l/asm.c
 //
@@ -32,11 +37,12 @@ package x86
 
 import (
 	"debug/elf"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/ld"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"log"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ld"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 // Append 4 bytes to s and create a R_CALL relocation targeting t to fill them in.

@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package objabi
 
-import "strings"
+import (
+	"strings"
+)
 
 // PathToPrefix converts raw string to the prefix that will be used in the
 // symbol table. All control characters, space, '%' and '"', as well as

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,7 +11,9 @@
 
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
 // Notes:
 //  - Integer types live in the low portion of registers. Upper portions are junk.
@@ -732,7 +739,7 @@ func init() {
 
 	archs = append(archs, arch{
 		name:            "AMD64",
-		pkg:             "github.com/dave/golib/src/cmd/internal/obj/x86",
+		pkg:             "github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/x86",
 		genfile:         "../../amd64/ssa.go",
 		ops:             AMD64ops,
 		blocks:          AMD64blocks,

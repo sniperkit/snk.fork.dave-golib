@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/5c/list.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5c/list.c
 //
@@ -32,7 +37,8 @@ package arm
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 func (pstate *PackageState) init() {

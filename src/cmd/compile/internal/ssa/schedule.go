@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package ssa
 
-import "container/heap"
+import (
+	"container/heap"
+)
 
 const (
 	ScorePhi = iota // towards top of block
@@ -22,7 +29,7 @@ type ValHeap struct {
 	score []int8
 }
 
-func (h ValHeap) Len() int { return len(h.a) }
+func (h ValHeap) Len() int      { return len(h.a) }
 func (h ValHeap) Swap(i, j int) { a := h.a; a[i], a[j] = a[j], a[i] }
 
 func (h *ValHeap) Push(x interface{}) {

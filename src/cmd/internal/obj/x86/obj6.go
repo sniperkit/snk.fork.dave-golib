@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/6l/pass.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/pass.c
 //
@@ -31,12 +36,13 @@
 package x86
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/src"
-	"github.com/dave/golib/src/cmd/internal/sys"
 	"math"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 func (pstate *PackageState) CanUse1InsnTLS(ctxt *obj.Link) bool {

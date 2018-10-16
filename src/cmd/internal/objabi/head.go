@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/l.h and related files.
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/l.h
 //
@@ -30,7 +35,9 @@
 
 package objabi
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // HeadType is the executable header type.
 type HeadType uint8

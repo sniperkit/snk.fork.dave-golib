@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2018 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -7,8 +12,9 @@ package x86
 import (
 	"errors"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 // evexBits stores EVEX prefix info that is used during instruction encoding.

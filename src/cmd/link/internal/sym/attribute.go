@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -79,23 +84,23 @@ const (
 // 17 attributes defined so far.
 )
 
-func (a Attribute) DuplicateOK() bool { return a&AttrDuplicateOK != 0 }
-func (a Attribute) External() bool { return a&AttrExternal != 0 }
-func (a Attribute) NoSplit() bool { return a&AttrNoSplit != 0 }
-func (a Attribute) Reachable() bool { return a&AttrReachable != 0 }
+func (a Attribute) DuplicateOK() bool      { return a&AttrDuplicateOK != 0 }
+func (a Attribute) External() bool         { return a&AttrExternal != 0 }
+func (a Attribute) NoSplit() bool          { return a&AttrNoSplit != 0 }
+func (a Attribute) Reachable() bool        { return a&AttrReachable != 0 }
 func (a Attribute) CgoExportDynamic() bool { return a&AttrCgoExportDynamic != 0 }
-func (a Attribute) CgoExportStatic() bool { return a&AttrCgoExportStatic != 0 }
-func (a Attribute) Special() bool { return a&AttrSpecial != 0 }
-func (a Attribute) StackCheck() bool { return a&AttrStackCheck != 0 }
+func (a Attribute) CgoExportStatic() bool  { return a&AttrCgoExportStatic != 0 }
+func (a Attribute) Special() bool          { return a&AttrSpecial != 0 }
+func (a Attribute) StackCheck() bool       { return a&AttrStackCheck != 0 }
 func (a Attribute) NotInSymbolTable() bool { return a&AttrNotInSymbolTable != 0 }
-func (a Attribute) OnList() bool { return a&AttrOnList != 0 }
-func (a Attribute) Local() bool { return a&AttrLocal != 0 }
-func (a Attribute) ReflectMethod() bool { return a&AttrReflectMethod != 0 }
-func (a Attribute) MakeTypelink() bool { return a&AttrMakeTypelink != 0 }
-func (a Attribute) Shared() bool { return a&AttrShared != 0 }
+func (a Attribute) OnList() bool           { return a&AttrOnList != 0 }
+func (a Attribute) Local() bool            { return a&AttrLocal != 0 }
+func (a Attribute) ReflectMethod() bool    { return a&AttrReflectMethod != 0 }
+func (a Attribute) MakeTypelink() bool     { return a&AttrMakeTypelink != 0 }
+func (a Attribute) Shared() bool           { return a&AttrShared != 0 }
 func (a Attribute) VisibilityHidden() bool { return a&AttrVisibilityHidden != 0 }
-func (a Attribute) SubSymbol() bool { return a&AttrSubSymbol != 0 }
-func (a Attribute) Container() bool { return a&AttrContainer != 0 }
+func (a Attribute) SubSymbol() bool        { return a&AttrSubSymbol != 0 }
+func (a Attribute) Container() bool        { return a&AttrContainer != 0 }
 
 func (a Attribute) CgoExport() bool {
 	return a.CgoExportDynamic() || a.CgoExportStatic()

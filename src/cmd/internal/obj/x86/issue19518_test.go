@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,13 +11,14 @@ package x86_test
 
 import (
 	"bytes"
-	"github.com/dave/golib/src/internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/internal/testenv"
 )
 
 const asmData = "\nGLOBL zeros<>(SB),8,$64\nTEXT ·testASM(SB),4,$0\nVMOVDQU zeros<>(SB), Y8 // PC relative relocation is off by 1, for Y8-15\nRET\n"

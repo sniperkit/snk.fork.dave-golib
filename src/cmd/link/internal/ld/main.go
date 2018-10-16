@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/6l/obj.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/obj.c
 //
@@ -33,13 +38,14 @@ package ld
 import (
 	"bufio"
 	"flag"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
 	"log"
 	"os"
 	"runtime"
 	"runtime/pprof"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
 )
 
 func (pstate *PackageState) init() {
@@ -63,7 +69,7 @@ func (pstate *PackageState) Main(arch *sys.Arch, theArch Arch) {
 
 	final := pstate.gorootFinal()
 	pstate.addstrdata1(ctxt, "runtime/internal/sys.DefaultGoroot="+final)
-	pstate.addstrdata1(ctxt, "github.com/dave/golib/src/cmd/internal/objabi.defaultGOROOT="+final)
+	pstate.addstrdata1(ctxt, "github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi.defaultGOROOT="+final)
 
 	// TODO(matloob): define these above and then check flag values here
 	if ctxt.Arch.Family == sys.AMD64 && pstate.objabi.GOOS == "plan9" {

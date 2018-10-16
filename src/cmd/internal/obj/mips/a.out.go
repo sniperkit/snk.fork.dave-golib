@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // cmd/9c/9.out.h from Vita Nuova.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -30,7 +35,7 @@
 package mips
 
 import (
-	"github.com/dave/golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p mips

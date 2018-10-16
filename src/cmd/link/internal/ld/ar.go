@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/include/ar.h
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/include/ar.h
 //
@@ -33,11 +38,12 @@ package ld
 import (
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/bio"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"io"
 	"os"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/bio"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 const (

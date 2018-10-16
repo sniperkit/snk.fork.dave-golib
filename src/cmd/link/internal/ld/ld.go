@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Derived from Inferno utils/6l/obj.c and utils/6l/span.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/obj.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/6l/span.c
@@ -32,7 +37,6 @@
 package ld
 
 import (
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"io/ioutil"
 	"log"
 	"os"
@@ -40,6 +44,8 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 func (ctxt *Link) readImportCfg(file string) {

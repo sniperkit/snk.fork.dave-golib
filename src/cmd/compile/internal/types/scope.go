@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package types
 
-import "github.com/dave/golib/src/cmd/internal/src"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
+)
 
 // A dsym stores a symbol's shadowed declaration so that it can be
 // restored once the block scope ends.

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // run
 
 // Copyright 2016 The Go Authors. All rights reserved.
@@ -9,7 +14,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //go:noinline
 func read1(b []byte) (uint16, uint16) {

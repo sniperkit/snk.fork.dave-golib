@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -101,7 +106,7 @@ func genOp() {
 	fmt.Fprintln(w, "package ssa")
 
 	fmt.Fprintln(w, "import (")
-	fmt.Fprintln(w, "\"github.com/dave/golib/src/cmd/internal/obj\"")
+	fmt.Fprintln(w, "\"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj\"")
 	for _, a := range archs {
 		if a.pkg != "" {
 			fmt.Fprintf(w, "%q\n", a.pkg)
@@ -303,7 +308,7 @@ func genOp() {
 		fmt.Fprintf(w, "var registers%s = [...]Register {\n", a.name)
 		var gcRegN int
 		for i, r := range a.regnames {
-			pkg := a.pkg[len("github.com/dave/golib/src/cmd/internal/obj/"):]
+			pkg := a.pkg[len("github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/"):]
 			var objname string // name in cmd/internal/obj/$ARCH
 			switch r {
 			case "SB":

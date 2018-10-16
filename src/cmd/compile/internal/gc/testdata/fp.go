@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // run
 
 // Copyright 2015 The Go Authors. All rights reserved.
@@ -8,7 +13,9 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // manysub_ssa is designed to tickle bugs that depend on register
 // pressure or unfriendly operand ordering in registers (and at

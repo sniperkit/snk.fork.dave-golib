@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // cmd/9c/9.out.h from Vita Nuova.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -29,7 +34,9 @@
 
 package ppc64
 
-import "github.com/dave/golib/src/cmd/internal/obj"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+)
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p ppc64
 
@@ -343,9 +350,9 @@ const (
 
 const (
 	C_COND_LT = iota // 0 result is negative
-	C_COND_GT // 1 result is positive
-	C_COND_EQ // 2 result is zero
-	C_COND_SO // 3 summary overflow or FP compare w/ NaN
+	C_COND_GT        // 1 result is positive
+	C_COND_EQ        // 2 result is zero
+	C_COND_SO        // 3 summary overflow or FP compare w/ NaN
 )
 
 const (

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -6,7 +11,9 @@
 
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
 // Notes:
 //  - Less-than-64-bit integer types live in the low portion of registers.
@@ -541,7 +548,7 @@ func init() {
 
 	archs = append(archs, arch{
 		name:            "PPC64",
-		pkg:             "github.com/dave/golib/src/cmd/internal/obj/ppc64",
+		pkg:             "github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj/ppc64",
 		genfile:         "../../ppc64/ssa.go",
 		ops:             ops,
 		blocks:          blocks,

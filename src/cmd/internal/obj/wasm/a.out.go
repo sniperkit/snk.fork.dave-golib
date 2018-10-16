@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2018 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package wasm
 
-import "github.com/dave/golib/src/cmd/internal/obj"
+import (
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+)
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p wasm
 

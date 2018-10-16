@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // cmd/9l/list.c from Vita Nuova.
 //
 //	Copyright © 1994-1999 Lucent Technologies Inc.  All rights reserved.
@@ -31,7 +36,8 @@ package mips
 
 import (
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/obj"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
 )
 
 func (pstate *PackageState) init() {

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/8l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/8l/asm.c
 //

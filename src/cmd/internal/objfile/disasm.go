@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2014 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -11,7 +16,6 @@ import (
 	"debug/gosym"
 	"encoding/binary"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/src"
 	"io"
 	"io/ioutil"
 	"os"
@@ -25,6 +29,8 @@ import (
 	"golang.org/x/arch/arm64/arm64asm"
 	"golang.org/x/arch/ppc64/ppc64asm"
 	"golang.org/x/arch/x86/x86asm"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/src"
 )
 
 // Disasm is a disassembler for a given File.

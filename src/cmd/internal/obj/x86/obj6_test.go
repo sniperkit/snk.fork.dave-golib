@@ -1,10 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package x86_test
 
 import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/dave/golib/src/internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -13,6 +17,8 @@ import (
 	"strconv"
 	"strings"
 	"testing"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/internal/testenv"
 )
 
 const testdata = "\nMOVQ AX, AX -> MOVQ AX, AX\n\nLEAQ name(SB), AX -> MOVQ name@GOT(SB), AX\nLEAQ name+10(SB), AX -> MOVQ name@GOT(SB), AX; LEAQ 10(AX), AX\nMOVQ $name(SB), AX -> MOVQ name@GOT(SB), AX\nMOVQ $name+10(SB), AX -> MOVQ name@GOT(SB), AX; LEAQ 10(AX), AX\n\nMOVQ name(SB), AX -> NOP; MOVQ name@GOT(SB), R15; MOVQ (R15), AX\nMOVQ name+10(SB), AX -> NOP; MOVQ name@GOT(SB), R15; MOVQ 10(R15), AX\n\nCMPQ name(SB), $0 -> NOP; MOVQ name@GOT(SB), R15; CMPQ (R15), $0\n\nMOVQ $1, name(SB) -> NOP; MOVQ name@GOT(SB), R15; MOVQ $1, (R15)\nMOVQ $1, name+10(SB) -> NOP; MOVQ name@GOT(SB), R15; MOVQ $1, 10(R15)\n"

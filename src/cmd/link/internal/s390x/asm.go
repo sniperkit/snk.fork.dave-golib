@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/5l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/5l/asm.c
 //
@@ -33,10 +38,11 @@ package s390x
 import (
 	"debug/elf"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/ld"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/ld"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 // gentext generates assembly to append the local moduledata to the global

@@ -1,12 +1,20 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Code generated from gen/ARM.rules; DO NOT EDIT.
 // generated with: cd gen; go run *.go
 
 package ssa
 
-import "math"
-import "github.com/dave/golib/src/cmd/internal/obj"
-import "github.com/dave/golib/src/cmd/internal/objabi"
-import "github.com/dave/golib/src/cmd/compile/internal/types"
+import (
+	"math"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/compile/internal/types"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/obj"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+)
 
 var _ = math.MinInt8         // in case not otherwise used
 var _ = obj.ANOP             // in case not otherwise used

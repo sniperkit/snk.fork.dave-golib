@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Inferno utils/8l/asm.c
 // https://bitbucket.org/inferno-os/inferno-os/src/default/utils/8l/asm.c
 //
@@ -39,14 +44,6 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"github.com/dave/golib/src/cmd/internal/bio"
-	"github.com/dave/golib/src/cmd/internal/objabi"
-	"github.com/dave/golib/src/cmd/internal/sys"
-	"github.com/dave/golib/src/cmd/link/internal/loadelf"
-	"github.com/dave/golib/src/cmd/link/internal/loadmacho"
-	"github.com/dave/golib/src/cmd/link/internal/loadpe"
-	"github.com/dave/golib/src/cmd/link/internal/objfile"
-	"github.com/dave/golib/src/cmd/link/internal/sym"
 	"io"
 	"io/ioutil"
 	"log"
@@ -56,6 +53,15 @@ import (
 	"runtime"
 	"strings"
 	"sync"
+
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/bio"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/objabi"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/internal/sys"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/loadelf"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/loadmacho"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/loadpe"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/objfile"
+	"github.com/sniperkit/snk.fork.dave-golib/src/cmd/link/internal/sym"
 )
 
 // Data layout and relocation.
